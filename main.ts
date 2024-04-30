@@ -107,8 +107,8 @@ console.log("32 / 4  = ", division);
 // Print that message.
 
 let favoriteNum: string = "0";
-let message: string = `My favorite number is ${favoriteNum}`;
-console.log(message);
+let messages: string = `My favorite number is ${favoriteNum}`;
+console.log(messages);
 
 
 
@@ -181,8 +181,6 @@ for (let val of listOfGuest) {
     `Assalamualikum dear respected ${val} I would like to invite you to dinner`
   );
 }
-
-
 
 
 
@@ -323,6 +321,7 @@ console.log(`The list is empty`);
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 // //• Print your array in its original order.
 
+
 let favoritePlaces: string[] = [
   "Makkah",
   "Al-Quads",
@@ -374,8 +373,8 @@ let dinnerGuest: string[] = [
   "Muhammad Ali",
   "Sheikh Azan",
 ];
-let message: string = `I am inviting ${dinnerGuest.length} number of people at dinner`;
-console.log(message);
+let messagess: string = `I am inviting ${dinnerGuest.length} number of people at dinner`;
+console.log(messagess);
 
 
 
@@ -439,10 +438,6 @@ console.log(num[5]);
 // • Look closely at your results, and make sure you understand why each line evaluates to True or False.
 // • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
 
-
-let car = "subaru";
-console.log("Is car == 'subaru'? I predict True.");
-console.log(car == "subaru");
 
 
 let car: string = "subaru";
@@ -516,21 +511,21 @@ console.log(car.length == 5);
 // • Test whether an item is not in a array
 
 
-let name : string = ("Muhammad Azan")
+let myName : string = ("Muhammad Azan")
 
 //1 testing for equality
 
 console.log("name == Muhammad Azan? I predicted true")
-console.log(name == "Muhammad Azan")
+console.log(myName == "Muhammad Azan")
 
-testing for un equality
+// testing for unequality
 console.log(" Is name != Muhammad Azan? I predicted false")
-console.log(name != "Muhammad Azan")
+console.log(myName != "Muhammad Azan")
 
 //2 Test  using the lower case function
 
 console.log("Is name.toLowerCase() == Muhammad Azan? i predicted false")
-console.log(name.toLocaleLowerCase() == "Muhammad Azan")
+console.log(myName.toLocaleLowerCase() == "Muhammad Azan")
 
 
 //3 Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to.
@@ -612,9 +607,9 @@ if(alien_colors === "green"){
 
 2
 
-let aliens_color : string = "red";
+let alien_color : string = "red";
 
-if(alien_colors === "green"){
+if(alien_color === "green"){
 
     console.log("You have earned 5 points")
 }
@@ -631,9 +626,9 @@ if(alien_colors === "green"){
 // • Write one version of this program that runs the if block and another that runs the else block.
 
 1
- let alien_color : string = "green";
+ let alien_colorss : string = "green";
 
- if(alien_color === "green"){
+ if(alien_colorss === "green"){
 
     console.log("You have earned 5 points")
  }else{
@@ -642,9 +637,9 @@ if(alien_colors === "green"){
  }
 
 2
-let alien_color = "red";
+let aliens_Color = "red";
 
-if(alien_color === "green"){
+if(aliens_Color === "green"){
 
 console.log("You have earned 5 points")
 }else{
@@ -666,9 +661,9 @@ console.log("You have earned 5 points")
 
 1
 
-let alien_color : String = "green";
+let Alien_color : String = "green";
 
-if(alien_color === "green"){
+if(Alien_color === "green"){
 
     console.log("You have earned 5 points")
 }else{
@@ -678,9 +673,9 @@ if(alien_color === "green"){
 
 2
 
-let alien_color : String = "red";
+let alienColor : String = "red";
 
-if(alien_color === "red"){
+if(alienColor === "red"){
 
     console.log("You have earned 10 points")
 }else{
@@ -690,9 +685,9 @@ if(alien_color === "red"){
 
 3
 
-let alien_color : String = "yellow";
+let aliencolor : String = "yellow";
 
-if(alien_color === "yello"){
+if(aliencolor === "yello"){
 
     console.log("You have earned 15 points")
 }else{
@@ -1128,7 +1123,7 @@ function show_magician(magician: string[]){
 
     }
 
-show_magician(magician_name)
+show_magician(magicians_name)
 
 
 
@@ -1142,8 +1137,8 @@ show_magician(magician_name)
 // see that the list has actually been modified.
 
 
-let magicians_name: string[] = ["Houdini", "Copperfield","Penn","Angel"]
-function show_magician(magician: string[]){
+let magiciansName: string[] = ["Houdini", "Copperfield","Penn","Angel"]
+function showMagician(magician: string[]){
 
     magician.forEach((names:string) =>console.log(names))
 
@@ -1157,7 +1152,7 @@ function show_magician(magician: string[]){
    let newArry =  make_great(magicians_name)
 console.log(newArry)
 
-show_magician(newArry)
+showMagician(newArry)
 
 
 
@@ -1173,15 +1168,15 @@ show_magician(newArry)
 // names and one array with the Great added to each magician’s name.
 
 
-let magicians_name: string[] = ["Houdini", "Copperfield","Penn","Angel"]
+let magicians_Name: string[] = ["Houdini", "Copperfield","Penn","Angel"]
 
-function show_magician(magician: string[]){
+function show_Magician(magician: string[]){
 
      return magician.map((names:string) =>names);
 
       }
 
-    function make_great(newMagician : string[]){
+    function make_Great(newMagician : string[]){
 
         return newMagician.map((name:string) => `The Great ${name}`)
 
@@ -1189,12 +1184,12 @@ function show_magician(magician: string[]){
 
 let copyArry =  magicians_name.slice(0) // is use to copy the array
 
-let newArry =  make_great(copyArry)
-console.log(newArry)
+let new_Arry =  make_Great(copyArry)
+console.log(new_Arry)
 
 // original Array
 
-let originalArry = show_magician(magicians_name)
+let originalArry = show_Magician(magicians_Name)
 console.log(originalArry)
 
 
@@ -1209,7 +1204,7 @@ console.log(originalArry)
 // that is being ordered. Call the function three times, using a different number
 // of arguments each time.
 
-function  Items(...items:string[]){                                                    
+function  Items(...items:any){                                                    
 
    console.log("\n",`The Items customer wants on their sandwich are as follow :`,"\n")
 
@@ -1219,9 +1214,11 @@ function  Items(...items:string[]){
 
 }
 
-Items(["Chicken patty","cheese","garlic mayo",])
-Items(["beef","Onion","Mashroom","Cucumber",])
-Items(["Chicken","Tomato","Onion","Chesse","Egg","Chipolte sauce","ketchup",])
+Items(["Chicken patty","cheese","garlic mayo",]);
+
+Items(["beef","Onion","Mashroom","Cucumber",]);
+
+Items(["Chicken","Tomato","Onion","Chesse","Egg","Chipolte sauce","ketchup",]);
 
 
 
